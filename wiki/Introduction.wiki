@@ -6,13 +6,13 @@ It is also nice to comment CSS and JavaScript, but you do not want the overhead 
 
 You also want to make sure that as much of the static content is cached as much as possible at the client. The ideal is to even avoid “304 Not Nodified” which are returned when a client requested something that has already been cached, and does not need to be updated. This can be accomplished by setting the HTTP Expire header to a date far in the future. That will force the browser not to ask for updates for that URL. However, when you need to update your files, you will need to give them a new URL, to push the updated files to the clients.
 
-These methods has been described more in depth at Yahoo:
+These techniques has been described more in depth at Yahoo:
 
  * http://developer.yahoo.com/performance/rules.html#num_http
  * http://developer.yahoo.com/performance/rules.html#minify
  * http://developer.yahoo.com/performance/rules.html#expires
 
-django-compress tries to address those issues with as little manual intervention as possible, whilst still being configurable enough to not get in your way. Read more about the features below.
+django-compress tries to address those issues with as little manual intervention as possible, whilst still being configurable enough to not get in your way. Read more about the [Features].
 
 There are numerous of other techniques that could be used to improve performance, Yahoo has an excellent page that lists the most common:
  * http://developer.yahoo.com/performance/rules.html
