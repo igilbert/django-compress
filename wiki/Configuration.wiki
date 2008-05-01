@@ -5,7 +5,7 @@ You specify groups of files to be compressed in your settings. The basic syntax 
 {{{
 COMPRESS_CSS = {
     'group_one': {
-        'source_filenames': ('css/style.css', 'css/foo.css', css/bar.css'),
+        'source_filenames': ('css/style.css', 'css/foo.css', 'css/bar.css'),
         'output_filename': 'css/one_compressed.css',
         'bump_filename': True,
         'extra_context': {
