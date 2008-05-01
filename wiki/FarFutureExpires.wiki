@@ -47,7 +47,7 @@ $HTTP["url"] =~ "^/media/css/" {
 }
 
 $HTTP["url"] =~ "^/media/js/" {
-     expire.url = ( "" => "access 10 hours" )
+     expire.url = ( "" => "access 10 years" )
 }
 }}}
 == nginx ==
