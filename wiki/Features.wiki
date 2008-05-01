@@ -8,4 +8,4 @@ This is a application that will provide an easy and automated way to output comp
  * A last-modifcation Query string can automatically be appended to static media to make use of “far future Expires HTTP header), and provide an automated way of updating the content without delays.
  * You setup and group your CSS and JavaScript-files in the settings, and set up whetter or not you want your files to be compressed.
  * Templatetags to output CSS (<link...>) or JavaScript (<script...>) tags with the compressed files if COMPRESS = True, or otherwise the source files.
- * The compressed files will be updated (if neeeded) when Django starts, or you can force-update them with “./manage.py synccompress” without the need to restart the Django server.
+ * The compressed files will be updated (if neeeded) when Django starts, or you can force-update them with “./manage.py synccompress” without the need to restart the Django server. You can also disable the automatically generation with a setting. 
