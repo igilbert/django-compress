@@ -1,6 +1,6 @@
 #summary django-compress features
 
-This is a application that will provide an easy and automated way to output compressed/minified CSS and JavaScript. It adheres to the DRY principle, you set up your CSS-files and JavaScript-files in your project settings, and you are done. There is no need to enter the names in your template again (a couple of template tags take care of that).
+This is a application that will provide an easy and automated way to output compressed/minified CSS and JavaScript. It adheres to the DRY principle, you set up your CSS-files and JavaScript-files in your project settings, and you are done. There is no need to enter the names in your template again (a couple of template tags takes care of that).
 
  * Group/concatenate your CSS/JavaScript source files to single files, and run the code through specified filters
  * Provides sane defaults for CSS (CSSTidy required) and JavaScript minification.
