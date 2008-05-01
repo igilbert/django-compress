@@ -11,11 +11,11 @@ You also want to make sure that as much of the static content is cached as much 
 
 These methods has been described more in depth at Yahoo:
 
-[http://developer.yahoo.com/performance/rules.html#num_http Foo]
-http://developer.yahoo.com/performance/rules.html#minify
-http://developer.yahoo.com/performance/rules.html#expires
+ * http://developer.yahoo.com/performance/rules.html#num_http
+ * http://developer.yahoo.com/performance/rules.html#minify
+ * http://developer.yahoo.com/performance/rules.html#expires
 
 django-compress tries to address those issues with as little manual intervention as possible, whilst still being configurable enough to not get in your way. Read more about the features below.
 
 There are numerous of other techniques that could be used to improve performance, Yahoo has an excellent page that lists the most common:
-http://developer.yahoo.com/performance/rules.html
+ * http://developer.yahoo.com/performance/rules.html
