@@ -23,7 +23,7 @@ If you have specified the CSS-groups “my_screen_css” and “my_print_css” 
 
 {{{
 {% load compressed %}
-{% compressed_css ‘my_screen_css’ %}
-{% compressed_css ‘my_print_css’ %}
-{% compressed_js ‘my_scripts’ %}
+{% compressed_css 'my_screen_css' %}
+{% compressed_css 'my_print_css' %}
+{% compressed_js 'my_scripts' %}
 }}}
