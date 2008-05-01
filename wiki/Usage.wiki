@@ -1,0 +1,25 @@
+#summary Describes how to use django-compress when it is installed and configured
+
+= Automated generation =
+If `COMPRESS` and `COMPRESS_AUTO` is enabled (`True`), the source files and the target files will be scanned when Django starts, and re-generated if needed. The last modified time of the files will be compared, and if any of the source-files is newer than the output-file, the file will be re-generated.
+
+= Management command =
+You can update and force updates of the compressed file(s) with the management command “synccompress”. This makes it possible to update the compressed files manually without restarting the Django server.
+
+The command is
+{{{ ./manage.py compress }}}
+(assuming you are in you project-folder that contains `manage.py`. To force all files to be re-generated, use the argument `--force` (e.g. `./manage.py synccompress --force`)
+
+= Templatetags =
+django-compress includes two template tags: compressed_css and compressed_js, in a template library called `compressed`
+
+They are used to output the <link> and <script>-tags for the specified CSS/JavaScript-groups (as specified in the settings). The first argument must be the name of the CSS/JavaScript group.
+
+== Example ==
+{{{
+{% load compressed %}
+{% compressed_css 'group_one' %}
+{% compressed_js 'all' %}
+}}}
+
+Depending of the `COMPRESS` setting, this will output the approriate <link> and <script> tags, for the source files, or for the compressed files.
