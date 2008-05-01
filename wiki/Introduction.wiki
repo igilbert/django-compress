@@ -1,5 +1,4 @@
-= Introduction = 
-
+#summary Short introduction to performance tweaks and what django-compress does
 JavaScript and CSS minification/compression can decrease load times of sites a lot.
 It is important to reduce the number of requests that are made. Fewer files means better performance. However, when you develop CSS, and particularly if you are building a big site, it can be nice to separate different parts of the site’s CSS into different files. You also want to keep the CSS and JavaScript in different files while you develop, to make debugging easier.
 
