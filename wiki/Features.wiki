@@ -1,0 +1,11 @@
+#summary django-compress features
+
+This is a application that will provide an easy and automated way to output compressed/minified CSS and JavaScript. It adheres to the DRY principle, you set up your CSS-files and JavaScript-files in your project settings, and you are done. There is no need to enter the names in your template again (a couple of template tags take care of that).
+
+ * Group/concatenate your CSS/JavaScript source files to single files, and run the code through specified filters
+ * Provides sane defaults for CSS (CSSTidy required) and JavaScript minification.
+ * It’s easy and straightforward to write custom compressors/filters to generate the output. Filters for jsmin and CSSTidy is included by default.
+ * A last-modifcation Query string can automatically be appended to static media to make use of “far future Expires HTTP header), and provide an automated way of updating the content without delays.
+ * You setup and group your CSS and JavaScript-files in the settings, and set up whetter or not you want your files to be compressed.
+ * Templatetags to output CSS (<link...>) or JavaScript (<script...>) tags with the compressed files if COMPRESS = True, or otherwise the source files.
+ * The compressed files will be updated (if neeeded) when Django starts, or you can force-update them with “./manage.py synccompress” without the need to restart the Django server.
