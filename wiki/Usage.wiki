@@ -17,11 +17,13 @@ django-compress includes two template tags: `compressed_css` and `compressed_js`
 
 They are used to output the <link> and <script>-tags for the specified CSS/JavaScript-groups (as specified in the settings). The first argument must be the name of the CSS/JavaScript group.
 
+The templatetags will either output the source filenames or the compressed filenames, depending on the `COMPRESS` setting, if you do not specify the `COMPRESS` setting, the source files will be used in DEBUG-mode, and compressed files in non-DEBUG-mode.
 == Example ==
+If you have specified the CSS-groups “my_screen_css” and “my_print_css” and a JavaScript-group with the name “my_scripts”, you would use the following code to output them all:
+
 {{{
 {% load compressed %}
-{% compressed_css 'group_one' %}
-{% compressed_js 'all' %}
+{% compressed_css ‘my_screen_css’ %}
+{% compressed_css ‘my_print_css’ %}
+{% compressed_js ‘my_scripts’ %}
 }}}
-
-Depending of the `COMPRESS` setting, this will output the approriate <link> and <script> tags, for the source files, or for the compressed files.
