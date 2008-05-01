@@ -1,6 +1,6 @@
 #summary Installation instructions for django-compress
 
-Installation is pretty straight-forward and follows the same installation procedure as many other Django applications. django-compress does not create any models.
+Installation is pretty straight-forward and follows the same installation procedure as many other Django applications. django-compress does not create any models, so you do not need to configure a database.
 
 == Recommendations ==
 By default django-compress uses CSSTidy to compress CSS. CSSTidy is an excellent stand-alone application for dealing with CSS-files. CSSTidy can be downloaded from: http://csstidy.sourceforge.net/. If you do not install CSSTidy, make sure to disable the filter in your settings (by setting COMPRESS_CSS_FILTERS = None).
