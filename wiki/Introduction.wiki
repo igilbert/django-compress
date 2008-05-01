@@ -1,5 +1,3 @@
-#summary Introduction to performance tweaks and django-compress
-
 = Introduction = 
 
 JavaScript and CSS minification/compression can decrease load times of sites a lot.
