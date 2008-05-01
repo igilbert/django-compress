@@ -29,7 +29,7 @@ COMPRESS_JS = {
  * `source_filenames` is a tuple with the source files to be compressed. The files are concatenated in the order it is specified in the tuple. This option is required.
  * `output_filename` is the filename of the (to be) compressed file. This option is required.
  * `bump_filename` regulates whetter or not to append a Query string with the last modified time on the compressed file’s URL, for use with “far future Expires”. This option is not required and can be left out.
- * `extra_context` is a dictionary of values to add to the template context, when generating the HTML for the HTML-tags with the templatetags. This option is not required and can be left out. 
+ * `extra_context` is a dictionary of values to add to the template context, when generating the HTML for the HTML-tags with the templatetags. This option is not required and can be left out. For CSS, if you do not specify `extra_context`/`media`, the default media in the `<link>` output will be `media="screen,projection"`.
 
 Note that all filenames are specified relative to MEDIA_ROOT, and thus the source files needs to be in your MEDIA_ROOT.
 
