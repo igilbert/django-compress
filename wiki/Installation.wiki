@@ -6,7 +6,7 @@ Installation is pretty straight-forward and follows the same installation proced
 By default django-compress uses CSSTidy to compress CSS. CSSTidy is an excellent stand-alone application for dealing with CSS-files. CSSTidy can be downloaded from: http://csstidy.sourceforge.net/. If you do not install CSSTidy, make sure to disable the filter in your settings (by setting COMPRESS_CSS_FILTERS = None).
 
 == Install instructions ==
- # Get the code from svn: `svn co svn checkout http://django-compress.googlecode.com/svn/trunk/ django-compress`
+ # Get the code from svn: `svn co http://django-compress.googlecode.com/svn/trunk/ django-compress`
  #
   # Use the `setup.py` script to install: `python setup.py install`
   # OR manually put the `compress`-directory somewhere on your PYTHONPATH
