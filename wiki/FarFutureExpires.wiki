@@ -3,7 +3,7 @@
 = General details and considerations about the "Far Future Expires" technique =
 (you can skip this if you already know what it is)
 
-If you really want to make sure that your CSS and JavaScript files get cached by the browser (and possibly by proxies) in, you should use "Far Future Expires". This means that you send the `Expires` HTTP-header with a date that is far in the future. That means that the file will be cached at the client (almost) forever.
+If you really want to make sure that your CSS and JavaScript files get cached by the browser (and possibly by proxies), you should use "Far Future Expires". This means that you send the `Expires` HTTP-header with a date that is far in the future. That means that the file will be cached at the client (almost) forever.
 
 If you do not specify a Expires header, the files will be requested again, and the server will respond "304 Not Modified" - which means that the file that the client got in its cache is still up-to-date. However, that means that there will be *a HTTP request anyways*. The actual data does not get sent, but there will still be unnecessary HTTP requests, which can be avoided.
 
