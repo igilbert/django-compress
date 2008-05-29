@@ -5,7 +5,7 @@
 
 If you really want to make sure that your CSS and JavaScript files get cached by the browser (and possibly by proxies), you should use "Far Future Expires". This means that you send the Expires HTTP-header with a date that is far in the future, resulting in the file being cached at the client (almost) forever
 
-If you do not specify an Expires header, the files will be requested again, and the server will respond "304 Not Modified" - which means that the file that the client got in its cache is still up-to-date. However, that means that there will be *a HTTP request anyways*. The actual data does not get sent, but there will still be unnecessary HTTP requests, which can be avoided.
+If you do not specify an Expires header, the files will be requested again, and the server will respond "304 Not Modified" - which means that the file that the client got in its cache is still up-to-date. *However, a HTTP request will still be made anyway.* The actual data does not get sent, but there will still be unnecessary HTTP requests, which can be avoided.
 
 Most modern browser implement "Heuristic expiration", so it will actually not be "304 Not Modified" for your static files on every request, however, the [http://www.w3.org/Protocols/rfc2616/rfc2616-sec13.html HTTP specification does not specify] (see section 13.2.2) how "Heuristic expiration" should be handled by the browsers. Therefore it is recommended to explicitly set the Expires header, to make sure all browsers cache the files in the preferred way.
 
