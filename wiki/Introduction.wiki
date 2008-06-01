@@ -4,7 +4,7 @@ It is important to reduce the number of requests that are made. Fewer files mean
 
 It is also nice to comment CSS and JavaScript, but you do not want the overhead of sending the comments and whitespaces to the clients.
 
-You also want to make sure that as much of the static content is cached as much as possible at the client. The ideal is to even avoid “304 Not Nodified” which are returned when a client requested something that has already been cached, and does not need to be updated. This can be accomplished by setting the HTTP Expire header to a date far in the future. That will force the browser not to ask for updates for that URL. However, when you need to update your files, you will need to give them a new URL, to push the updated files to the clients.
+You also want to make sure that as much of the static content is cached as much as possible at the client. The ideal is to even avoid “304 Not Modified” which are returned when a client requested something that has already been cached, and does not need to be updated. This can be accomplished by setting the HTTP Expire header to a date far in the future. That will force the browser not to ask for updates for that URL. However, when you need to update your files, you will need to give them a new URL, to push the updated files to the clients.
 
 These techniques has been described more in depth at Yahoo:
 
