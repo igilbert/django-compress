@@ -36,6 +36,8 @@ Note that all filenames are specified relative to MEDIA_ROOT, and thus the sourc
 = Other settings =
  * `COMPRESS`: When `COMPRESS` is `True`, CSS and JavaScripts will be concatenated and filtered. When `False`, the source-files will be used instead. Defaults to `not DEBUG` (compressed files will only be used in non-DEBUG-mode (production))
  * `COMPRESS_AUTO`: Auto-generate CSS and JavaScript files whenever needed, when Django starts. Defaults to `True`. If you disable this, you need to manually use the management command to keep your files up to date.
+ * `COMPRESS_AUTO_TEMPLATES`: Auto-generate CSS and JavaScript files whenever needed, when the template tags are invoked. This setting will make sure that the outputted files always are up to date (if you are using the provided templatetags to output the links to your files). Defaults to `True`.
+
  * `COMPRESS_CSS_FILTERS`: A tuple of filters to be applied to CSS files. Defaults to `('compress.filters.csstidy.CSSTidyFilter', )`. Please note that in order to use CSSTidy, you need to install CSSTidy (see [Installation] for more details).
  * `COMPRESS_JS_FILTERS`: A tuple of filters to be applied to JavaScript files. Defaults to `('compress.filters.jsmin.JSMinFilter',)`
 
