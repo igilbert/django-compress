@@ -1,5 +1,9 @@
 #summary Installation instructions for django-compress
+= <font color=red>django-compress is no longer maintained</font> =
+Please consider switching to [django-pipeline http://django-pipeline.readthedocs.org/]!
 
+This page is kept for historical reasons.
+-----------
 Installation is pretty straight-forward and follows the same installation procedure as many other Django applications. django-compress does not create any models, so you do not need to configure a database.
 
 == Recommendations ==
