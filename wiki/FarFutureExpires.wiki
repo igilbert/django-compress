@@ -1,5 +1,10 @@
 #summary Details about the "Far Future Expires" technique, and how to implement it with help from django-compress
 
+= <font color=red>django-compress is no longer maintained</font> =
+Please consider switching to [django-pipeline http://django-pipeline.readthedocs.org/]!
+
+This page is kept for historical reasons.
+-----------
 = General details and considerations about the "Far Future Expires" technique =
 (you can skip this if you already know what it is)
 
