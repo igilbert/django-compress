@@ -1,5 +1,10 @@
 #summary Describes how to use django-compress when it is installed and configured
 
+= <font color=red>django-compress is no longer maintained</font> =
+Please consider switching to [django-pipeline http://django-pipeline.readthedocs.org/]!
+
+This page is kept for historical reasons.
+-----------
 = Automated generation =
 If `COMPRESS` and `COMPRESS_AUTO` is enabled (`True`), the source files will be automatically updated, and re-generated IF NEEDED when invoked from the templatetags. The last modified time of the files will be compared, and if any of the source-files is newer than the output-file, the file will be re-generated.
 
