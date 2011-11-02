@@ -1,5 +1,12 @@
 #summary A list of backwards incompatible changes
 
+= <font color=red>django-compress is no longer maintained</font> =
+Please consider switching to [django-pipeline http://django-pipeline.readthedocs.org/]!
+
+This page is kept for historical reasons.
+-----------
+
+
 = Revision 53 =
 http://code.google.com/p/django-compress/source/detail?r=53
 
