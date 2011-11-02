@@ -1,4 +1,9 @@
 #summary Describes how to customize and add your own functionality to django-compress
+= <font color=red>django-compress is no longer maintained</font> =
+Please consider switching to [django-pipeline http://django-pipeline.readthedocs.org/]!
+
+This page is kept for historical reasons.
+-----------
 
 django-compress can be customized an a couple of ways.
 
